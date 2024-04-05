@@ -15,7 +15,12 @@ const { title, image, body, altImg } = Astro.props;
     <h3>
       {title}
     </h3>
-    <Image src={image} alt={altImg} class="card-image" loading="lazy" />
+    <Image
+      src={image}
+      alt={altImg}
+      class="w-full aspect-auto rounded-lg"
+      loading="lazy"
+    />
     <p>
       {body}
     </p>
@@ -26,11 +31,6 @@ const { title, image, body, altImg } = Astro.props;
     list-style: none;
     display: flex;
     padding: 1px;
-
-    background-image: none;
-    background-size: 400%;
-    border-radius: 7px;
-    background-position: 100%;
   }
   .link-card > .card-item {
     width: 100%;
@@ -54,12 +54,6 @@ const { title, image, body, altImg } = Astro.props;
     text-align: center;
     color: white;
     opacity: 0.8;
-  }
-  .card-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
   }
   .link-card:is(:hover, :focus-within) h3 {
     color: white;
