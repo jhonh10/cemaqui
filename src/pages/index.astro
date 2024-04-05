@@ -10,7 +10,7 @@ import localMiniCargadorImage from "../assets/images/mini-cargador.webp";
 import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Cursos de maquinaria pesada | CEMAQUI">
   <main>
     <h1>
       Todo lo que necesitas para formarte como un operador de <span
@@ -57,8 +57,11 @@ import Card from "../components/Card.astro";
               (se podra validar y descargar en nuestro sitio web).
             </li>
           </ul>
-          <div class="btn-container">
-            <a href="/contact" class="btn">
+          <div class="btn-container animate-bounce">
+            <a
+              href="https://api.whatsapp.com/send?phone=573103134073&text=Hola!%20Me%20interesa%20recibir%20mas%20informaci%C3%B3n%20sobre%20el%20programa%20como%20operador%20de%20maquinaria%20pesada"
+              class="btn"
+            >
               <span class="btn-wrapper">
                 <span class="icon">
                   <Icon name="tabler:phone" class="icon" />
@@ -109,8 +112,11 @@ import Card from "../components/Card.astro";
         Si estas interesado en aplicar a nuestros programas de formación, no
         dudes en contactarnos.
       </p>
-      <div class="btn-container">
-        <a href="/contact" class="btn">
+      <div class="btn-container animate-pulse">
+        <a
+          href="https://api.whatsapp.com/send?phone=573103134073&text=Hola!%20Me%20interesa%20recibir%20mas%20informaci%C3%B3n%20sobre%20el%20programa%20como%20operador%20de%20maquinaria%20pesada"
+          class="btn"
+        >
           <span class="btn-wrapper">
             <span class="icon">
               <Icon name="tabler:phone" class="icon" />
@@ -157,6 +163,9 @@ import Card from "../components/Card.astro";
         text-align: center;
         margin-bottom: 1em;
         text-transform: uppercase;
+      }
+      section {
+        margin-bottom: 2rem;
       }
       .image {
         width: 100%;
@@ -216,7 +225,7 @@ import Card from "../components/Card.astro";
       }
       .btn {
         padding: 0.5rem 2rem;
-        background-color: #02a529;
+        background-color: #25d366;
         color: white;
         border: none;
         border-radius: 4px;
