@@ -7,7 +7,7 @@ export default {
         primary: "#e8ea38",
         secondary: "#eef0f3",
         tertiary: "#FF8C00",
-        whatsapp: "#075E54",
+        whatsapp: "#25d366",
         dark: "#000000",
         light: "#FFFFFF",
       },
