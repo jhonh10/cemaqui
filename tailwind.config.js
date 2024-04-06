@@ -2,7 +2,23 @@
 export default {
   content: ["./src/**/*.{astro,html,js,}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#e8ea38",
+        secondary: "#eef0f3",
+        tertiary: "#FF8C00",
+        whatsapp: "#25D366",
+        dark: "#000000",
+        light: "#FFFFFF",
+      },
+      listStyleType: {
+        square: "square",
+        roman: "upper-roman",
+        circle: "circle",
+        decimal: "decimal",
+        disc: "disc",
+      },
+    },
   },
   plugins: [require("tailwindcss-animated")],
 };
