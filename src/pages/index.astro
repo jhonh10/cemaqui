@@ -32,13 +32,13 @@ import WhatsappButton from "../components/WhatsappButton.astro";
       <div class="w-full">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
           <div>
-            <Picture
+            <Image
               src={localHeroImage}
               alt="retroexcavadora cursos en bogotá y cundinamarca"
               class="rounded-md animate-fade-down"
               loading="eager"
-              width={800}
-              height={600}
+              widths={[300, 600, 900, 1200, 1800]}
+              sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, (max-width: 1200px) 33vw, 25vw"
             />
           </div>
           <div class="flex flex-col justify-evenly animate-fade-left">
