@@ -20,8 +20,9 @@ const { title, image, body, altImg } = Astro.props;
     <Image
       src={image}
       alt={altImg}
-      class="rounded-lg"
-
+      class="rounded-lg animate-fade-up"
+      width={500}
+      height={500}
       loading="lazy"
     />
     <p class="text-white text-center p-3 text-sm md:text-lg opacity-80">
