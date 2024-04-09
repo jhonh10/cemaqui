@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
+import { Image, Picture } from "astro:assets";
 import localHeroImage from "../assets/images/hero.webp";
 import localRetroImage from "../assets/images/retro.webp";
 import localRetroLlantasImage from "../assets/images/retro-llantas.webp";
@@ -20,7 +20,7 @@ import WhatsappButton from "../components/WhatsappButton.astro";
         >Maquinaria Pesada</span
       >
     </h1>
-    <p class="text-white text-base text-center p-3 mb-5 leading-6">
+    <p class="text-white text-base text-center p-3 mb-5 leading-6 animate-fade-left">
       Si estas interesado en aplicar a diversos trabajos del sector construcción
       este programa es para ti. <span class="hidden sm:inline-block"
         >El centro de enseñanza para operadores de maquinaria pesada con + 10
@@ -32,12 +32,18 @@ import WhatsappButton from "../components/WhatsappButton.astro";
       <div class="w-full">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
           <div>
-            <Image
+            <Picture
+              src={localHeroImage}
+              alt="retroexcavadora cursos en bogotá y cundinamarca"
+              class="rounded-md animate-fade-down"
+              loading="eager"
+            />
+            <!-- <Image
               src={localHeroImage}
               alt="retroexcavadora cursos en bogotá y cundinamarca"
               class="rounded-md animate-fade aspect-auto"
               loading="eager"
-            />
+            /> -->
           </div>
           <div class="flex flex-col justify-evenly">
             <h2
