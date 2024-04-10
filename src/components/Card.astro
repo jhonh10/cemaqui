@@ -24,7 +24,7 @@ const { title, image, body, altImg } = Astro.props;
       loading="lazy"
       widths={[240, 480, 720, image.width]}
       sizes={`(max-width: 360px) 240px, (max-width: 720px) 480px, (max-width: 1600px) 720px, ${image.width}px`}
-      quality={95}
+      quality={70}
     />
     <p class="text-white text-center p-3 text-sm md:text-lg opacity-80">
       {body}
